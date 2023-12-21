@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+  .logo {
+    width: 25%;
+    text-align: center;
+    /*background: red;*/
+  }
+  .nav {
+    width: 100%;
+    height: 15vh;
+    background: rgba(0, 0, 0, 0.2);
+    color: Black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  .nav .logo {
+    width: 25%;
+    text-align: center;
+    /*background: red;*/
+  }
+  .nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  .nav .menu a:first-child {
+    color: Black;
+  }
+  .main {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+  }
+  .section h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+  }
+  .section h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    
+  }
+  .section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+  }
+  .section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+  }
+  .NavLink {
+    text-align: center;
+  }
+  .section .btntwo {
+    background: white;
+    color: black;
+    width: 10%;
+    text-align: center;
+    justify-content:right;
+    align-items: center;
+
+    padding: 15px 30px;
+    border-radius: 4px;
+    outline: none;
+   
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+
+    margin: 0;
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+  }
+  .btntwo:hover{
+    background: black;
+    color: white;
+  }
+ .follow h4{
+  width: 100%;
+  text-align: center;
+ }
+.follow .icon {
+  width: 100%;
+  text-align: center;
+}
+.footer{
+  padding: 50px;
+  min-height: 50px;
+  background-color: black;
+}
+
+@media screen and (min-width: 768px){
+  .footer-content{
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 0;
+      column-gap: 20px;
+      text-align: center;
+      justify-content: space-between;
+      color:white;
+    
+  }
+  .footer-content p{
+      text-align: center;
+      color: white;
+  }
+  .footer-content span{
+      text-align: right;
+      color:white;
+    }
+}
